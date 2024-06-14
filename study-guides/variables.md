@@ -22,3 +22,4 @@ Let's look at an example using the `querySelector` method.
 ```
 
 Let's say we want to store a reference to the `p` element.
+ 
