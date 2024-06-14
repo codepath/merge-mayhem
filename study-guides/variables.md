@@ -1,30 +1,5 @@
 # Variables
-<<<<<<< HEAD
 
-# Variables scrap 4
-**You should use the `const` variable type!** We don't want to be able to redefine or change the variable holding the reference to our HTML elements. This is why we should choose the `const` variable type.
-
-Let's look at an example using the `querySelector` method.
-
-# Variable scrap 5
-
-**Example**: `index.html`
-
-```html
-<html>
-    <head>
-        <title>My Document</title>
-    </head>
-    <body>
-        <h1>Header</h1>
-        <p>Paragraph</p>
-    </body>
-</html>
-```
-
-Let's say we want to store a reference to the `p` element.
- 
-=======
 ## Variables
 
 In order to save the DOM references to your HTML elements, you must store them in variables.
@@ -42,7 +17,6 @@ var varName = value;
 
 To define an empty variable, just define the type of variable and name, and end with a semicolon (e.g `var varName`).
 
-
 #### `var`, `let`, and `const`
 
 In some programming languages, like Java and C++, when declaring a variable you must specify the data type (integer, String, float, boolean, etc.) In JavaScript, a variable does not need to be specifically defined in its declaration. Instead, the keyword `var`, `const`, and `let` define how a variable can be used and/or changed.
@@ -54,6 +28,25 @@ In some programming languages, like Java and C++, when declaring a variable you 
 
 When storing DOM variables, take a moment to think about which type of variable you would use to store DOM references to HTML elements.
 
+**You should use the `const` variable type!** We don't want to be able to redefine or change the variable holding the reference to our HTML elements. This is why we should choose the `const` variable type.
+
+Let's look at an example using the `querySelector` method.
+
+**Example**: `index.html`
+
+```html
+<html>
+    <head>
+        <title>My Document</title>
+    </head>
+    <body>
+        <h1>Header</h1>
+        <p>Paragraph</p>
+    </body>
+</html>
+```
+
+Let's say we want to store a reference to the `p` element.
 
 - Since there are no attributes attached to this element, no `id` or `class` name, this eliminates the use of the `getElementById` method.
 - We can only use the `querySelector` or `querySelectorAll` method. However, since there is only a single instance of a `p` element, we will elect to use the `querySelector` method with the **element selector** associated with its tag name `p`.
@@ -63,4 +56,3 @@ const pElem = document.querySelector('p');
 ```
 
 Notice that we use either **single or double quotation marks** as a parameter to the `querySelector` method.
->>>>>>> e2f29adbb9d5296ce97708394054a43baee78ad4
